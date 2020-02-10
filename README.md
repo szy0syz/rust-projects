@@ -1,5 +1,7 @@
 # rust-projects
 
+> rust 相对其他语言来说，绝大部分知识没有可迁移的，所以学起来感觉好难。
+
 ## 猜大小游戏 (guessing_game)
 
 ```bash
