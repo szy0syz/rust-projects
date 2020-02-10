@@ -28,3 +28,42 @@ Please input your guess.
 You guessed: 53
 You win!
 ```
+
+## 端口扫描器（port_sniffer_cli）
+
+> cargo run -- -j 2000 127.0.0.1
+
+```bash
+ip_sniffer -h
+ip_sniffer -j 100 192.168.1.1
+ip_sniffer 192.168.1.1
+```
+
+```rust
+use std::env;
+
+fn main() {
+    let args: Vec<String> = env::args().collect();
+
+    for i in &args {
+        println!("{}", i);
+    }
+
+    println!("{:?}", args);
+}
+```
+
+```bash
+~/git/rust-projects/port_sniffer_cli on  master! ⌚ 10:13:42
+$ cargo run -- -j 100
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/port_sniffer_cli -j 100`
+target/debug/port_sniffer_cli
+-j
+100
+["target/debug/port_sniffer_cli", "-j", "100"]
+```
+
+## 聊天软件（chat-app）
+
+## 迷你区块链（toy-blockchain-cli）
